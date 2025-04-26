@@ -1,0 +1,120 @@
+/* Reset and Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Section Headings with Stylish Underlines */
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border-radius: 4px;
+}
+
+/* Tech Icons */
+.tech-icon {
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.tech-icon i {
+    transition: transform 0.3s ease;
+}
+.tech-icon:hover {
+    transform: scale(1.1);
+}
+.tech-icon:hover i {
+    color: #6f42c1 !important; /* Purple on hover */
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Button Hover Effect */
+.hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Navbar Customization */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Progress Bar Rounded Edges */
+.progress {
+    height: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #e9ecef;
+}
+.progress-bar {
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Resume and Hire Me Button Styles */
+.hire-btn {
+    transition: all 0.3s ease;
+}
+.hire-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Card Padding Adjustment */
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Responsive Image Styling */
+#about img {
+    border: 5px solid #007bff30;
+    transition: transform 0.3s ease;
+}
+#about img:hover {
+    transform: scale(1.05);
+}
+/* Highlighted Intro Text */
+.intro-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.intro-text .highlight-name {
+    color: blue;
+    font-size: 1.6rem;
+    font-weight: 700;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+    section h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .section-line {
+      width: 150px;
+      height: 4px;
+      margin: 0 auto 2rem auto;
+      border-radius: 10px;
+    }
+
+    #about .section-line { background-color: #6610f2; }       /* Blue */
+    #whatido .section-line { background-color: #6610f2; }      /* Indigo */
+    #skills .section-line { background-color: #6610f2; }       /* Green */
+    #projects .section-line { background-color: #6610f2; }     /* Orange */
+    #education .section-line { background-color: #6610f2; }    /* Gray */
+    #contact .section-line { background-color: #6610f2; }      /* Red */
+  </style>
+</head>
+<body>
+
+<!-- 🌟 Sticky Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="about" class="container py-5">
+    <h2>About Me</h2>
+    <div class="section-line"></div>
+    <div class="row align-items-center flex-column-reverse flex-md-row text-center text-md-start">
+        <!-- Text on the Left -->
+        <div class="col-md-8 mt-4 mt-md-0">
+            <p class="intro-text">
+               <h3> Hi, I'm <span style="color:blue">Ketan Desale</span>,</h3><br>
+                a passionate <b>Java Full Stack Developer</b> with experience in building modern web applications
+                using Spring Boot, Hibernate, Thymeleaf, and front-end technologies like HTML, CSS, Bootstrap, and React.
+            </p>
+
+            <!-- 🌐 Social Media Icons -->
+            <div class="mt-4 d-flex justify-content-center justify-content-md-start gap-4">
+                <a href="https://github.com/yourusername" target="_blank" class="text-dark fs-3"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="text-primary fs-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ketandesale29" target="_blank" class="text-danger fs-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/yourusername" target="_blank" class="text-primary fs-3"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            <!-- 📎 Resume & Hire Me Buttons -->
+            <div class="mt-4 d-flex justify-content-center justify-content-md-start gap-3">
+                <a href="resume.pdf" download class="btn btn-outline-primary">Download Resume</a>
+                <a href="#contact" class="btn btn-primary hire-btn">Hire Me</a>
+            </div>
+        </div>
+
+        <!-- Image on the Right -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img src="images/icon.jpeg" alt="My Photo" class="img-fluid" style="max-width: 700px;">
+        </div>
+    </div>
+</section>
+
+
+<section id="whatido" class="container mt-5">
+    <h2>What I Do</h2>
+  <div class="section-line"></div>
+    <div class="row align-items-center">
+        <!-- Left side for Icons -->
+        <div class="col-md-6">
+            <div class="d-flex flex-wrap justify-content-start gap-4">
+                <div class="tech-icon text-danger">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="tech-icon text-primary">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="tech-icon text-warning">
+                    <i class="fab fa-js fa-3x"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-icon text-secondary">
+                    <i class="fab fa-java fa-3x"></i>
+                    <p>Java</p>
+                </div>
+                <div class="tech-icon text-info">
+                    <i class="fab fa-react fa-3x"></i>
+                    <p>ReactJS</p>
+                </div>
+                <div class="tech-icon text-success">
+                    <i class="fab fa-node-js fa-3x"></i>
+                    <p>NodeJS</p>
+                </div>
+                <div class="tech-icon text-dark">
+                    <i class="fab fa-node fa-3x"></i>
+                    <p>ExpressJS</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right side for Description -->
+        <div class="col-md-6 mt-4 mt-md-0">
+            <p class="lead fw-bold">CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK 😎</p>
+            <p>⚡ I specialize in creating responsive, user-friendly, and interactive websites and web applications using modern frameworks and technologies.</p>
+            <p>⚡ I build scalable and efficient backend systems using Java Spring Boot, Node.js, and Express to ensure high-performance applications.</p>
+            <p>⚡ My focus is on clean, maintainable code and solving complex problems through creative and innovative solutions.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ⚒️ Skills Section -->
+<section id="skills" class="container mt-5">
+   <h2>My Skills</h2>
+  <div class="section-line"></div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Skills with Icons and Progress Bars -->
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fab fa-html5 fa-3x text-danger"></i>
+                    <h5 class="mt-2">HTML</h5>
+                    <div class="progress"><div class="progress-bar bg-danger" style="width: 95%;">95%</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fab fa-css3-alt fa-3x text-primary"></i>
+                    <h5 class="mt-2">CSS</h5>
+                    <div class="progress"><div class="progress-bar bg-primary" style="width: 90%;">90%</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fab fa-js fa-3x text-warning"></i>
+                    <h5 class="mt-2">JavaScript</h5>
+                    <div class="progress"><div class="progress-bar bg-warning" style="width: 80%;">80%</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fab fa-java fa-3x text-success"></i>
+                    <h5 class="mt-2">Java</h5>
+                    <div class="progress"><div class="progress-bar bg-success" style="width: 85%;">85%</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fab fa-react fa-3x text-info"></i>
+                    <h5 class="mt-2">React</h5>
+                    <div class="progress"><div class="progress-bar bg-info" style="width: 75%;">75%</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Skills Added -->
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fab fa-node fa-3x text-success"></i>
+                    <h5 class="mt-2">Node.js</h5>
+                    <div class="progress"><div class="progress-bar bg-success" style="width: 70%;">70%</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fab fa-node-js fa-3x text-dark"></i>
+                    <h5 class="mt-2">Express.js</h5>
+                    <div class="progress"><div class="progress-bar bg-dark" style="width: 70%;">70%</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fab fa-database fa-3x text-warning"></i>
+                    <h5 class="mt-2">MySQL</h5>
+                    <div class="progress"><div class="progress-bar bg-warning" style="width: 80%;">80%</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm text-center border-0 h-100">
+                <div class="card-body">
+                    <i class="fas fa-database fa-3x text-success"></i>
+                    <h5 class="mt-2">MongoDB</h5>
+                    <div class="progress"><div class="progress-bar bg-success" style="width: 65%;">65%</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 🎓 Education Section -->
+<section id="education" class="container mt-5 py-4">
+   <h2>Education</h2>
+  <div class="section-line"></div>
+    
+    <div class="d-flex align-items-start mb-4 border-bottom pb-4">
+        <!-- University Logo -->
+        <div class="me-4">
+            <img src="images/sppu.png" alt="SPPU Logo" style="width: 80px; height: 80px; object-fit: cover;" class="rounded-circle shadow">
+        </div>
+
+        <!-- Education Info -->
+        <div>
+            <h4 class="mb-1">Savitribai Phule Pune University</h4>
+            <h6 class="text-muted">Bachelor in Computer Engineering (3rd Year)</h6>
+            <p class="mb-1"><strong>College:</strong> Dhole Patil College of Engineering</p>
+            <p class="text-muted">Currently pursuing my undergraduate degree with a focus on full stack development, problem solving, and real-world project implementation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 🚀 Projects Section -->
+<section id="projects" class="container mt-5 py-4">
+    <h2 class="mb-4 text-center">Projects</h2>
+    <div class="section-line"></div>
+    <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-md-4">
+            <div class="project-card shadow rounded p-3 h-100">
+                <h5>👩‍💼 Employee Management System</h5>
+                <p>A Spring Boot & MySQL-based web app to manage employees, with CRUD operations and admin dashboard.</p>
+                <span class="badge bg-warning text-dark">Java</span>
+                <span class="badge bg-info text-dark">Spring Boot</span>
+                <span class="badge bg-success">MySQL</span>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4">
+            <div class="project-card shadow rounded p-3 h-100">
+                <h5>📈 Stock Market Trading (AI)</h5>
+                <p>A small project that uses AI to simulate basic trading strategies with real-time chart analysis.</p><br>
+                <span class="badge bg-warning text-dark">python</span>
+                <span class="badge bg-primary">AI</span>
+                <span class="badge bg-danger"></span>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4">
+            <div class="project-card shadow rounded p-3 h-100">
+                <h5>👤 User Management System</h5>
+                <p>Web app with user registration, login authentication and dashboards using Spring Security.</p><br>
+                <span class="badge bg-warning text-dark">Spring Boot</span>
+                <span class="badge bg-dark">Spring Security</span>
+                <span class="badge bg-success">MySQL</span>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-md-4">
+            <div class="project-card shadow rounded p-3 h-100">
+                <h5>🛍️ E-Commerce Product Page</h5>
+                <p>Responsive product display with cart functionality built using HTML, CSS and vanilla JS.</p>
+                <span class="badge bg-secondary">HTML</span>
+                <span class="badge bg-info text-dark">CSS</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+            </div>
+        </div>
+
+        <!-- Project 5: To-Do Website -->
+        <div class="col-md-4">
+            <div class="project-card shadow rounded p-3 h-100">
+                <h5>📋 To-Do Website</h5>
+                <p>A simple to-do list web app with task creation, status toggle, and deletion using JS and local storage.</p>
+                <span class="badge bg-info text-dark">HTML</span>
+                <span class="badge bg-secondary">CSS</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+            </div>
+        </div>
+
+        <!-- Project 6: Tic Tac Toe -->
+        <div class="col-md-4">
+            <div class="project-card shadow rounded p-3 h-100">
+                <h5>❌⭕ Tic Tac Toe (C)</h5>
+                <p>A simple CLI-based two-player Tic Tac Toe game using C with game logic and win checking.</p>
+                <span class="badge bg-primary">C</span>
+                <span class="badge bg-dark">Console App</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 📬 Contact Me Section -->
+<section id="contact" class="container py-5">
+  <h2 class="text-center mb-4">Contact Me</h2>
+  <div class="section-line"></div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow p-4 rounded">
+        <form action="ContactServlet" method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter your full name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Enter your email address" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit"  onclick="alert(contact Sucessfullly)" class="btn btn-primary px-4 py-2 rounded-pill hover-scale">
+              🚀 Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
